@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "release-it": "^17.3.0"
+    "release-it": "^17.3.0",
+    "standard-version": "^9.5.0"
   },
   "dependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -19,7 +20,7 @@
       "publish": false
     },
     "scripts": {
-        "release": "release-it"
+      "release": "standard-version"
     },
     "plugins": {
       "@release-it/conventional-changelog": {
