@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "release-it": "^17.3.0",
     "standard-version": "^9.5.0"
   },
@@ -20,7 +21,8 @@
       "publish": false
     },
     "scripts": {
-      "release": "standard-version"
+      "release": "standard-version",
+      "version": "auto-changelog -p && git add CHANGELOG.md"
     },
     "plugins": {
       "@release-it/conventional-changelog": {
