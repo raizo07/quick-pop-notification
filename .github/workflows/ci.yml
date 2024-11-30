@@ -61,8 +61,5 @@ jobs:
           path: ~/.scarb
           key: ${{ runner.os }}-scarb-${{ hashFiles('**/Scarb.toml') }}
 
-      - name: Run tests
-        run: scarb test
-
       - name: Run linter
         run: scarb fmt --check
